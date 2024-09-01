@@ -30,7 +30,7 @@ print(actor.lowercased())
 print(movie.hasPrefix("A day")) // lets us know whether a string starts with some letters of our choosing:
 print(movie.hasSuffix("Apple"))
 
-// -------------------------------------------------
+// --------------------------------------------------
 
 let score = 10
 
