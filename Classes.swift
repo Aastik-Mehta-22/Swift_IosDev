@@ -59,3 +59,25 @@ robot.printSummary()
 //  if a child class wants to change a method from a parent class, you must use override in the child class’s version. 
 
 // Swift is smart about how method overrides work: if your parent class has a work() method that takes no parameters, but the child class has a work() method that accepts a string to designate where the work is being done, that does not require override because you aren’t replacing the parent method.
+
+// How to add iniatlisers for classes
+class Vehicle {
+    
+    let isElectric : Bool
+    
+    init(isElectric: Bool){
+        self.isElectric: isElectric
+        
+    }
+}
+
+class Car: Vehicle{
+    let isCompatible : Bool
+    
+    init(isCompatible: Bool){
+        self.isCompatible = isCompatible
+        super.init(isElectric: isElectric);
+    }
+}
+
+let teslaX = Car(isElectric: true,isCompatible: true)
