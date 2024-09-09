@@ -81,3 +81,23 @@ class Car: Vehicle{
 }
 
 let teslaX = Car(isElectric: true,isCompatible: true)
+
+// How to create a deinitaliser for a class
+class User {
+    let id: Int
+
+    init(id: Int) {
+        self.id = id
+        print("User \(id): I'm alive!")
+    }
+
+    deinit {
+        print("User \(id): I'm dead!")
+    }
+}
+
+for i in 1...3{
+    let user = User(id: i)
+    print("User \(user.id): I'm in control!")
+    
+}
